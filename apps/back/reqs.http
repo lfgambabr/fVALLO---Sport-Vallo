@@ -1,0 +1,55 @@
+GET http://localhost:4000/ping
+###
+GET http://localhost:4000/events
+###
+GET http://localhost:4000/events/cyxvctcct9-sjjdpbjyob-3sovbd1oh53
+###
+GET http://localhost:4000/events/reuniao-familia-oliveira
+###
+GET http://localhost:4000/events/validate/frescobol-estaleirinho/ya2ws42ki5a-26etn0jmqyr-6oa46vlrl8l
+
+###
+POST http://localhost:4000/events/access
+Content-Type: application/json
+
+{
+    "id": "4ct9rwj70ij-65wi8weqw5r-ztm07xpwvuj",
+    "password": "casamento2024w"
+}
+
+###
+POST http://localhost:4000/events/reuniao-familia-oliveira/invited
+Content-Type: application/json
+
+{
+    "name": "Nando Gamba",
+    "email":"a@b.com",
+    "confirmed": true,
+    "hasCompanion": false,
+    "qtCompanions": 0
+}
+
+###
+POST http://localhost:4000/events
+Content-Type: application/json
+
+{
+    "alias": "semana-formacao-dev",
+    "name": "Evento Semana Formação.DEV",
+    "date": "2025-12-31T23:00",
+    "location": "São Paulo",
+    "description": "Evento de tecnologia",
+    "password": "frameworks2025",
+    "image": "https://www.formacao.dev/assets/img/formacao-dev.png",
+    "imageBackground": "https://www.formacao.dev/assets/img/formacao-dev-background.png",
+    "expectedAudience": 1000,
+    "inviteds": [
+        {
+            "name": "Leonardo Leitão",
+            "email": "leonardo@formacao.dev",
+            "confirmed": true,
+            "hasCompanion": true,
+            "qtCompanions": 10
+        }
+    ]
+}
