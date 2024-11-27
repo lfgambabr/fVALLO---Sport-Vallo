@@ -13,4 +13,4 @@ Sistema é composto por 4 aplicações:
 - Frontend Web: React, NextJS
 - Mobile: React-Native
 
-Documentação: docs/
+Documentação: packages/docs/
