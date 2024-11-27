@@ -1,10 +1,12 @@
 {
   "name": "fvallo",
   "version": "1.0.0",
+  "private": "true",
   "scripts": {
     "dev": "run-p packages:* apps:*",
     "apps:front": "cd apps/front && npm run dev",
     "apps:back": "cd apps/back && npm run dev",
+    "apps:mobile": "cd apps/mobile &&                       npm run android",
     "packages:core": "cd packages/core && npm run dev"
   },
   "keywords": [],
